@@ -49,4 +49,40 @@ export const GlobalStyle = createGlobalStyle`
     background: ${(props) => props.theme.color.colorWhite};
   }
 
+  a {
+    color: $color-dark;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-dark;
+    }
+  }
+
+  @keyframes blur1 {
+    0% {
+      filter: blur(0) contrast(1);
+    }
+
+    50% {
+      filter: blur(5px) contrast(20);
+    }
+
+    100% {
+      filter: blur(0) contrast(1);
+    }
+  }
+
+  @keyframes blur2 {
+    0% {
+      filter: blur(0) contrast(20);
+    }
+
+    50% {
+      filter: blur(8px) contrast(20);
+    }
+
+    100% {
+      filter: blur(0) contrast(20);
+    }
+  }
 `;

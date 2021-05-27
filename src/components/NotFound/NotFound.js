@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
+import AnimationBlock from 'components/AnimationBlock/AnimationBlock';
 
 import {
   NotFoundContainer,
@@ -19,10 +20,10 @@ export default function NotFound() {
         <NotFoundSubTitle>404</NotFoundSubTitle>
 
         <NotFoundTitle>
-          {/* <AnimationBlock
-              title="Ой, такої сторінки не існує"
-              title2="Oops, we can’t find this page"
-            /> */}
+          <AnimationBlock
+            firstTitle="Ой, такої сторінки не існує"
+            secondTitle="Oops, we can’t find this page"
+          />
         </NotFoundTitle>
 
         <NotFoundDesc>

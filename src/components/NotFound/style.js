@@ -16,6 +16,7 @@ export const NotFoundWrapp = styled.div`
 `;
 
 export const NotFoundSubTitle = styled.div`
+  font-family: Neue-Machina-Regular;
   font-size: ${({ theme }) => theme.font_size.fs_h1};
   line-height: ${({ theme }) => theme.line_height.lh_h1};
   margin-bottom: 16px;
