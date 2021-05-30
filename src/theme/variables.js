@@ -9,10 +9,10 @@ export const theme = {
     colorLight: '#E0E0E0',
     colorCopperRust: '#BCAFA5',
     colorFringyFlower: '#B0E2CB',
-    colorSilk: '#BCAFA5',
     colorWarning: '#F4DA5B',
     colorLightBlue: '#3B5998',
     colorDarkBlue: '#2B4781',
+    colorMainBackground: '#F3F3F3',
   },
   font_size: {
     fs_h1: '36px',

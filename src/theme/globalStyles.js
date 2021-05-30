@@ -44,18 +44,40 @@ export const GlobalStyle = createGlobalStyle`
   body {
     width: 100%;
     min-width: 320px;
+
     font-family: BasisGrotesquePro-Regular;
     font-size: 14px;
     background: ${(props) => props.theme.color.colorWhite};
   }
 
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
   a {
-    color: $color-dark;
+    color: ${({ theme }) => theme.color.colorDark};
     text-decoration: none;
 
     &:hover {
-      color: $color-dark;
+      color: ${({ theme }) => theme.color.colorDark};
     }
+  }
+
+  .icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+  .icon .-stroke {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1px;
   }
 
   @keyframes blur1 {
