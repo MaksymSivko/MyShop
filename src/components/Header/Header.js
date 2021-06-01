@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { Icon } from 'elements/Icon/Icon';
 
 import {
   HeaderContainer,
@@ -7,19 +8,38 @@ import {
   HeaderConntrol,
   ControlBtn,
   LogoConntrol,
+  HeaderNavList,
 } from './style';
-import { Icon } from 'elements/Icon/Icon';
+import { HeaderNavItem } from 'elements/HeaderNavItem/HeaderNavItem';
+
+const category = [
+  {
+    title: 'ювелирные украшения',
+    url: '/#1',
+  },
+  {
+    title: 'бижутерия',
+    url: '/#2',
+  },
+  {
+    title: 'бренды',
+    url: '/#3',
+  },
+  {
+    title: 'контакты',
+    url: '/#4',
+  },
+];
 
 export default function Header() {
   return (
     <>
       <HeaderContainer>
         <HeaderConntrol>
-          <ControlBtn className="menu-btn">
-            {/* <div className="control__btn menu-btn" onClick={openSidebarMenu}> */}
+          <ControlBtn>
+            {/* onClick={openSidebarMenu}*/}
             <Icon name="menu" />
           </ControlBtn>
-          {/* <div className="control__logo">{renderLogo()}</div> */}
           <LogoConntrol>
             {
               <Link href={'/'}>
@@ -30,8 +50,9 @@ export default function Header() {
             }
           </LogoConntrol>
         </HeaderConntrol>
-        <div className="header__nav-list">
-          header__nav-list
+        <HeaderNavList>
+          <HeaderNavItem list={category} />
+
           {/* {menu &&
               menu.length != 0 &&
               menu
@@ -46,25 +67,7 @@ export default function Header() {
                     />
                   );
                 })} */}
-          <div className="nav-item">
-            <Link href={'/brands'}>
-              <a className="nav-item__title">
-                {/* <span>{st(`${router.locale}`, 'brands')}</span> */}
-                <Icon name="down" />
-                <span>1</span>
-              </a>
-            </Link>
-          </div>
-          <div className="nav-item">
-            <Link href={'/contacts'}>
-              <a className="nav-item__title">
-                <span>2</span>
-                {/* <span>{st(`${router.locale}`, 'contacts')}</span> */}
-                <Icon name="down" />
-              </a>
-            </Link>
-          </div>
-        </div>
+        </HeaderNavList>
         <div className="header__control">
           <div className="control__language">
             <div className="language__btn">

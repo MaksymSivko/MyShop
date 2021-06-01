@@ -48,3 +48,10 @@ export const LogoConntrol = styled.div`
     justify-content: center;
   }
 `;
+
+export const HeaderNavList = styled.div`
+  width: 100%;
+  max-width: 60%;
+  display: flex;
+  justify-content: space-between;
+`;
