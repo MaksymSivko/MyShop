@@ -14,6 +14,11 @@ export const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.5s ease;
+
+  @media (max-width: 1024px) {
+    height: 60px;
+  }
 
   @media (max-width: 374px) {
     padding: 0 20px;
@@ -22,6 +27,9 @@ export const HeaderContainer = styled.header`
 
 export const HeaderBasement = styled.div`
   height: 80px;
+  @media (max-width: 1024px) {
+    height: 60px;
+  }
 `;
 
 export const HeaderConntrol = styled.div`
@@ -149,6 +157,10 @@ export const LenguageList = styled.div`
   display: flex;
   overflow: hidden;
   height: 0;
+
+  @media (max-width: 1024px) {
+    top: 38px;
+  }
 `;
 
 export const LenguageListItem = styled.a`

@@ -65,6 +65,25 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
+  main {
+    min-height: calc(100vh - 354px);
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 0 26px;
+
+    @media (max-width: 1280px) {
+      max-width: 1090px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 752px;
+    }
+  }
+
   .icon {
     display: inline-block;
     width: 1em;
